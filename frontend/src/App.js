@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import HomePage from "./containers/HomePage";
 import OtherPage from "./containers/OtherPage";
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <div>
+          <div className="navbar">
             <Link to="/">Home</Link>
             <Link to="/other">Other</Link>
           </div>
