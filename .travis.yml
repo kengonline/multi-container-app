@@ -21,16 +21,15 @@ after_success:
   - docker push kengonline/multi-container-backend-server
   - docker push kengonline/multi-container-worker
   - docker push kengonline/multi-container-nginx
-
-deploy:
-  provider: elasticbeanstalk
-  region: ap-southeast-1
-  app: multi-container-docker
-  env: MultiContainerDocker-env
-  bucket_name: elasticbeanstalk-ap-southeast-1-179397784370
-  bucket_path: multi-container-docker
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+# deploy:
+#   provider: elasticbeanstalk
+#   region: ap-southeast-1
+#   app: multi-container-docker
+#   env: MultiContainerDocker-env
+#   bucket_name: elasticbeanstalk-ap-southeast-1-179397784370
+#   bucket_path: multi-container-docker
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key:
+#     secure: "$AWS_SECRET_KEY"

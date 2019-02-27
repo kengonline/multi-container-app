@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "debug": "nodemon --inspect=0.0.0.0:9229 --nolazy app.js"
   },
   "author": "",
   "license": "ISC",
